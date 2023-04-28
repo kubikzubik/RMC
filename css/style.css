@@ -46,6 +46,18 @@ a:hover {
 }
 
 .link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 75%;
+  line-height: 125%;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 2%;
 }
 
@@ -58,7 +70,7 @@ a:hover {
   color: #FFB076;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  border-bottom: 1px solid #FFB076;
+  text-transform: uppercase;
 }
 
 button {
