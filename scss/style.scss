@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "Larken-Medium"; 
+    src: url("../fonts/LarkenDEMO-Medium.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: "Larken-Regular"; 
+    src: url("../fonts/LarkenDEMO-Regular.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body{
+    min-width: 770px;
+    background-color: #0B0E17;
+    overflow-x: hidden;
+    font-family: Roboto;
+	line-height: 125%;
+	font-size: 16px;
+	color: #ABAEB7;
+}
+
+
+aside{
+	display: block;
+}
+
+a,
+a:visited {
+    color: #ABAEB7;
+	text-decoration: none;
+	text-align: center;
+	transition-duration: 0.5s;
+    text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.link{
+    margin: 2%;
+}
+
+.link:hover{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    color: #FFB076;
+    transition-duration: 0.5s;
+    border-bottom: 1px solid #FFB076;
+}
+
+button{
+    background-color: #0B0E17;
+    border: 1px solid #FFFFFF;
+    padding: 15px 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.container{
+    max-width: 1300px;
+    min-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+
+.preTitle{
+    font-family: 'Larken-Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.3em;
+    color: #FFC978;
+}
+
+
+.menu{
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    width: 99%;
+    margin: 0 auto;
+
+    &__logo{
+        font-family: 'Larken-Medium';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 125%;
+        color: #FFFFFF;
+    }
+
+    &__linkS{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 75%;
+        line-height: 125%;
+        text-align: right;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+}
+
+.mainpage{
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+
+    &__column{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title{
+        font-family: 'Larken-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 84px;
+        line-height: 125%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__text{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 125%;
+        max-width: 600px;
+        margin-bottom: 1%;
+    }
+
+    &__button{
+        width: 25%;
+        min-width: 265px;
+    }
+}
+
+.dfgrid{
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1300px;
+
+    &__title{
+        font-family: 'Larken-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 125%;
+        color: #FFFFFF;
+    }
+
+    &__head{    
+        display: flex;
+        flex-direction: row;
+        max-width: 1300px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__right{
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        justify-content: right;
+    }
+
+    &__left{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__grid{
+        display: grid;
+        gap: 2%;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr)
+    }
+
+    &__item{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__item1{
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-end: 2;
+    }
+
+    &__item2{
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-end: 2;
+    }
+
+    &__item3{
+        grid-row-start: 1;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-end: 2;
+    }
+
+    &__item4{
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-end: 3;
+    }
+
+    &__item5{
+        grid-row-start: 2;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-end: 3;
+
+    }
+
+    &__item6{
+        grid-row-start: 2;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-end: 3;
+    }
+}
+
+.esgrid{
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &__item{
+        width: 100%;
+    }
+}
+
+.footer{
+    margin: 3%;
+    &__main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1300px;
+        width: 100%;
+    }
+
+    &__column{
+        display: flex;
+        flex-direction: column;
+        max-width: 33%;
+    }
+
+    
+    &__logo{
+        font-family: 'Larken-Medium';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 125%;
+        color: #FFFFFF;
+    }
+
+    &__title{
+        font-family: 'Larken-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 125%;
+        color: #FFFFFF;
+    }
+
+    &__line{
+        
+        &_1{
+            margin-right: 4%;
+            margin-left: 2%;
+        }
+
+        &_2{
+            margin-right: 2%;
+            margin-left: 4%;
+        }
+        height: 200px;
+        width: 1px;
+        background: linear-gradient(180deg, rgba(171, 174, 183, 0) 0%, #ABAEB7 51.56%, rgba(171, 174, 183, 0) 100%)
+    }
+}
+
+@media(max-width:770px){
+    .dfgrid{
+        &__right{
+            max-width: 80%;
+        }
+        &__left{
+            max-width: 40%;
+        }
+    }
+}
